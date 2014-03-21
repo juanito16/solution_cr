@@ -11,6 +11,7 @@
     <%=stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%=javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%=stylesheet_link_tag    "bootstrap", media: "all", "data-turbolinks-track" => true %>
+    <%=javascript_include_tag "bootstrap", "data-turbolinks-track" => true %>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
@@ -20,18 +21,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row-fluid">
         <div class="col-md-1">
-          <%=image_tag("LOGO IT Solutions cr.ai.png",width: "80px",height: "80px")%>
+          <%=image_tag("LOGO IT Solutions cr.ai.png",width: "60px",height: "60px")%>
         </div>
         <div class="col-md-1 pull-right">
-          <%=image_tag("postgresql-partnerHover.png",width: "67px",height: "67px")%>
+          <%=image_tag("facebook.jpg",width: "57px",height: "57px")%>
         </div>
-      </div>
+      </div><br><br><br><p>
       <div class="masthead">
         <div class="text-muted"></div>
         <ul class="nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><%=link_to "Home",root_path%></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Downloads</a></li>
@@ -41,7 +42,7 @@
       </div>
         <%= yield %>
     </div>
-      <%=javascript_include_tag "bootstrap", "data-turbolinks-track" => true %>
+      
   </body>
 </html>
 
