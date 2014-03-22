@@ -20,7 +20,7 @@
  <style type="text/css">
   body { 
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEXb7rdEThXlMAWsG7hIlpwMX_76ptr1YaRbbQ5KLs1s7tJJQm");
-  background-position: 100% 61%;
+  background-position: 100% 45%;
    background-repeat: no-repeat;
    background-repeat: repeat-x;
 }
@@ -39,16 +39,18 @@
       <div class="masthead">
         <div class="text-muted"></div>
         <ul class="nav nav-justified">
-          <li class="active"><%=link_to "Inicio",root_path%></li>
+          <li class="<%=@home%>"><%=link_to "Inicio",root_path%></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#">Servicios</a></li>
           <li><a href="#">Descargas</a></li>
-          <li><a href="#">Acerca de nosotros</a></li>
+          <li class="<%=@abaut%>"><%=link_to "Acerca",home_about_path%></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
       </div>
+      <!-- CONTENIDO PAGINA -->
         <%= yield %>
-        
+      <!-- FIN CONTENIDO PAGINA -->
+
     </div>
       <footer class="well well-lg">
           <strong>&copy; <%=Time.now.year%> It Solutio cr</strong>.  Todos los derechos reservados.  
