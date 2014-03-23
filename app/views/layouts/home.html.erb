@@ -10,7 +10,8 @@
     <!-- Bootstrap core CSS -->
     <%=stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%=javascript_include_tag "application", "data-turbolinks-track" => true %>
-  
+    <%=stylesheet_link_tag    "bootstrap", media: "all", "data-turbolinks-track" => true %>
+    <%=javascript_include_tag "bootstrap", "data-turbolinks-track" => true %>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
@@ -41,7 +42,7 @@
           <li class="<%=@home%>"><%=link_to "Inicio",root_path%></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#">Servicios</a></li>
-          <li><a href="#">Descargass</a></li>
+          <li><a href="#">Descargas</a></li>
           <li class="<%=@abaut%>"><%=link_to "Acerca",home_about_path%></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
