@@ -28,7 +28,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-          <%=image_tag("LOGO IT Solutions cr.ai.png",width: "60px",height: "60px")%>
+          <%=link_to root_path do%>
+            <%=image_tag("LOGO IT Solutions cr.ai.png",width: "60px",height: "60px")%>
+          <% end -%>
         </div>
         <div class="col-md-2 pull-right">
           <a href="https://es-la.facebook.com/" target="_blank"><%=image_tag("icons-social/facebook-logo.png",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right",data:{toggle: "tooltip",title: "Facebook", placement: "bottom"},id: "tooltip") %></a>
