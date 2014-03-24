@@ -31,9 +31,9 @@
           <%=image_tag("LOGO IT Solutions cr.ai.png",width: "60px",height: "60px")%>
         </div>
         <div class="col-md-2 pull-right">
-          <%=image_tag("icons-social/facebook-logo.png",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right") %>
-          <%=image_tag("icons-social/Twitter1.jpg",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right") %>
-          <%=image_tag("icons-social/google-plus-icon.png",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right") %>
+          <a href="https://es-la.facebook.com/" target="_blank"><%=image_tag("icons-social/facebook-logo.png",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right",data:{toggle: "tooltip",title: "Facebook", placement: "bottom"},id: "tooltip_facebook") %></a>
+          <a href="https://es-la.facebook.com/" target="_blank"><%=image_tag("icons-social/Twitter1.jpg",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right",data:{toggle: "tooltip",title: "Twitter", placement: "bottom"},id: "tooltip") %></a>
+          <a href="https://es-la.facebook.com/" target="_blank"><%=image_tag("icons-social/google-plus-icon.png",width: "45px",height: "45px",style: "padding:5px;",class: "pull-right",data:{toggle: "tooltip",title: "Google plus", placement: "bottom"},id: "tooltip1") %></a>
         </div>
       </div>
       <div class="masthead">
@@ -57,4 +57,9 @@
         </footer>
   </body>
 </html>
+<script type="text/javascript">
+  $('#tooltip_facebook').tooltip()
+  $('#tooltip').tooltip()
+  $('#tooltip1').tooltip()
+</script>
 
